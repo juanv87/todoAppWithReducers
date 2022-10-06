@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-export const GlobalContext = createContext({
+export const initialState = {
   tasks: [
     {
       id: "1",
@@ -15,4 +15,6 @@ export const GlobalContext = createContext({
       done: false,
     },
   ],
-});
+};
+
+export const GlobalContext = createContext(initialState);
